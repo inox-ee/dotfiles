@@ -1,0 +1,8 @@
+[user]
+	        name = Kazuma Inokuchi
+		email = ddz92478@gmail.com
+[core]
+	        autoCRLF = input
+[help]
+	        autocorrect = 1
+

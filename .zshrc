@@ -22,7 +22,7 @@ autoload -Uz _zinit
 # ColorTheme
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f $ZDOTDIR/.p10k.zsh ]] || source $ZDOTDIR/.p10k.zsh
 
 # My Zsh plugin
 zinit load zsh-users/zsh-syntax-highlighting
@@ -33,7 +33,7 @@ export LSCOLORS=gxfxcxdxbxegedabagacag
 export LS_COLORS='di=36;40:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;46'
 
 # history
-export HISTFILE="$HOME/dotfiles/.zhistory" # Don't forget to give permission `600`
+export HISTFILE="$ZDOTDIR/.zhistory" # Don't forget to give permission `600`
 HISTSIZE=10000
 SAVEHIST=1000000
 setopt EXTENDED_HISTORY
@@ -48,7 +48,7 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 # MY ENV
-export ORICAL_DATABASE_HOST="127.0.0.1"
+# export ORICAL_DATABASE_HOST="127.0.0.1"
 
 # Aliases
 alias ls='ls --group-directories-first --color -F'
@@ -57,5 +57,5 @@ alias ber='bundle exec rails'
 alias berspec='bundle exec rspec'
 alias python='python3'
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f $ZDOTDIR/.fzf.zsh ] && source $ZDOTDIR/.fzf.zsh
 
