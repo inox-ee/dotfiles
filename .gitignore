@@ -1,4 +1,5 @@
 # zsh autocreate
+.zhistory
 .zcompdump
 
 # vim config
