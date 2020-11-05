@@ -3,7 +3,7 @@ set term=builtin_ansi
 set nocompatible
 set noswapfile
 set showcmd
-set viminfo+=n~/.vim/.viminfo
+set viminfo+=n$ZDOTDIR/.vim/.viminfo
 
 set number
 set showmatch
