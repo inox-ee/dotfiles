@@ -1,2 +1,7 @@
+# zsh autocreate
 .zcompdump
+
+# vim config
+.vim/*
+!.vim/vimrc
 
