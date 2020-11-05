@@ -1,7 +1,7 @@
 # ref: https://petitviolet.hatenablog.com/entry/20190708/1562544000
 
 function select_cdr(){
-    local selected_dir=$(cdr -l | awk '{ print $2 }' | \
+    local selected_dir=$(\ls -la | grep "^d" | awk '{ print $9 }' | \
       fzf --preview 'f() { sh -c "ls -hFGlA $1" }; f {}')
     if [ -n "$selected_dir" ]; then
         BUFFER="cd ${selected_dir}"
@@ -10,7 +10,7 @@ function select_cdr(){
     zle clear-screen
 }
 zle -N select_cdr
-bindkey "^[^c" select_cdr
+bindkey "^k^o" select_cdr
 
 # git statusで対象となるファイルのgit diffみながらファイルを選択する
 function select_file_from_git_status() {
