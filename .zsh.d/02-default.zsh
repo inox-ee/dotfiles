@@ -1,3 +1,7 @@
+# enable zsh default function
+bindkey -e
+autoload -Uz chpwd_recent_dirs cdr
+
 # history
 export HISTFILE="$HOME/.zhistory" # Don't forget to give permission `600`
 HISTSIZE=10000
