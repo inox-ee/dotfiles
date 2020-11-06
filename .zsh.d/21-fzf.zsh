@@ -1,8 +1,10 @@
 # ref: https://petitviolet.hatenablog.com/entry/20190708/1562544000
 
+export FZF_CTRL_T_COMMAND="find . -not -path '*/\.git/*'"
+
 function select_cdr(){
-    local selected_dir=$(\ls -la | grep "^d" | awk '{ print $9 }' | \
-      fzf --preview 'f() { sh -c "ls -hFGlA $1" }; f {}')
+    local selected_dir=$(cdr -l | awk '{ print $2 }' | \
+        fzf --preview 'f() { sh -c "ls -hFGlA $1" }; f {}')
     if [ -n "$selected_dir" ]; then
         BUFFER="cd ${selected_dir}"
         zle accept-line
@@ -11,6 +13,18 @@ function select_cdr(){
 }
 zle -N select_cdr
 bindkey "^k^o" select_cdr
+
+function select_ccd(){
+    local selected_dir=$(\ls -la | grep "^d" | awk '{ print $9 }' | \
+      fzf --preview 'f() { sh -c "ls -hFGlA $1" }; f {}')
+    if [ -n "$selected_dir" ]; then
+        BUFFER="cd ${selected_dir}"
+        zle accept-line
+    fi
+    zle clear-screen
+}
+zle -N select_ccd
+bindkey "^k^l" select_ccd
 
 # git statusで対象となるファイルのgit diffみながらファイルを選択する
 function select_file_from_git_status() {

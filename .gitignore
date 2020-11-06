@@ -1,6 +1,7 @@
 # zsh autocreate
 .zhistory
 .zcompdump
+.chpwd-recent-dirs
 
 # vim config
 .vim/*
