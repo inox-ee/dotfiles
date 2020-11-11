@@ -26,3 +26,8 @@ set smartcase
 set incsearch
 set wrapscan
 set hlsearch
+
+imap [ []<left>
+imap ( ()<left>
+imap { {}<left>
+
