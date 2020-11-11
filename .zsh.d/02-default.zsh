@@ -1,3 +1,8 @@
+# general
+export EDITOR='vim'
+export VISUAL='vim'
+export PAGER='less'
+
 # enable zsh default function
 bindkey -e
 autoload -Uz chpwd_recent_dirs cdr
