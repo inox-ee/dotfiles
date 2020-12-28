@@ -28,6 +28,21 @@
 5. Setup new Distribution
    Input ID & password.
 
+#### WSL2 - Trouble Shooting
+
+1. Do not forget to enable WSL and VM
+
+```powershell
+# Run as administrator
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatfrm /all /norestart
+## and restart.
+```
+
+2. If a error occured: "This update only applies to machines with the Windows Subsystem for Linux"
+
+copy `wsl_update_x64.msi` to `C:\Windows\System32\lxss\tools\` and execute.
+
 ### Linux
 
 1. Change apt mirror server
