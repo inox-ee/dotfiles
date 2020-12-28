@@ -15,6 +15,7 @@
    > <https://docs.microsoft.com/ja-jp/windows/wsl/install-win10>
 2. Download Linux Kernel Update Program Package
    ダウンロードして実行 : <https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi>
+   if some error occured ("This update only applies to machines with the WSL"), copy `wsl_update_x64.msi` to `C:\Windows\System32\lxss\tools\`
 3. Set WSL2 to default
 
 ```powershell
