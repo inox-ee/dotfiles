@@ -84,7 +84,8 @@ $ ln -siv $ZDOTDIR/.wslconfig
 ```zsh
 # install zinit (skip recommended plugins)
 ## if some scripts are written in .zshrc, delete it.
-$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
+$ mkdir ~/.zinit
+$ git clone https://github.com/zdharma/zinit.git ~/.zinit/bin
 # install fzf
 $ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 $ ~/.fzf/install
