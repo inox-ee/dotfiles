@@ -95,6 +95,10 @@ $ (cd ~/$ZDOTDIR/.vim/colors && curl -O https://raw.githubusercontent.com/w0ng/v
 # # Access to https://nerdfonts.com. Download _FiraMono Nerd Font_ and install it.
 # install rbenv
 $ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+# install pip
+$ curl https://bootstrap.pypa.io/get-pip.py | python
+# install trash-cli
+$ pip install trash-cli
 ```
 
 ## other setup
