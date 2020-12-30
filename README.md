@@ -73,7 +73,7 @@ $ chsh -s $(which zsh)
 
 ```zsh
 $ git clone git@github.com:inox-ee/dotfiles.git
-$ echo (export ZDOTDIR="$HOME/dotfiles"\nsource $ZDOTDIR/.zshenv) > ~/.zshenv
+$ echo export ZDOTDIR="$HOME/dotfiles"\\nsource $ZDOTDIR/.zshenv\\n > ~/.zshenv
 $ ln -siv $ZDOTDIR/.gitconfig
 $ ln -siv $ZDOTDIR/.vim
 $ ln -siv $ZDOTDIR/.wslconfig
@@ -83,12 +83,18 @@ $ ln -siv $ZDOTDIR/.wslconfig
 
 ```zsh
 # install zinit (skip recommended plugins)
-## if some scripts are written in .zshrc, delete it.
-$ mkdir ~/.zinit
-$ git clone https://github.com/zdharma/zinit.git ~/.zinit/bin
+# # you don't need to do anything.
 # install fzf
 $ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 $ ~/.fzf/install
+# # remove _.fzf.zsf_ because it is in dotfiles.
+# install vim-hybrid
+$ mkdir ~/.vim/colors
+$ (cd ~/$ZDOTDIR/.vim/colors && curl -O https://raw.githubusercontent.com/w0ng/vim-hybrid/master/colors/hybrid.vim)
+# install powerline font
+# # Access to https://nerdfonts.com. Download _FiraMono Nerd Font_ and install it.
+# install rbenv
+$ git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 ```
 
 ## other setup
