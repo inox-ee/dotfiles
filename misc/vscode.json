@@ -1,0 +1,124 @@
+{
+  "ruby.useLanguageServer": true,
+  "ruby.format": "rubocop",
+  "ruby.lint": {
+    "rubocop": {
+      "command": "rubocop",
+      "useBundler": true,
+      "lint": true
+    }
+  },
+  // "ruby.locate": {
+  //   "exclude": "{**/@(test|spec|tmp|.*),**/@(test|spec|tmp|.*)/**,**/*_spec.rb}",
+  //   "include": "**/*.rb"
+  // },
+  // "solargraph.transport": "external",
+  // "solargraph.externalServer": {
+  //   "host": "localhost",
+  //   "port": 7658
+  // },
+  // "solargraph.definitions": true,
+  "solargraph.diagnostics": true,
+  "solargraph.logLevel": "debug",
+  "ruby.intellisense": "rubyLocate",
+  "workbench.colorTheme": "Monokai Dimmed",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": true,
+  "files.exclude": {
+    "**/.git": false
+  },
+  "search.exclude": {
+    "**/node_modules": false
+  },
+  "emmet.includeLanguages": {
+    "django-html": "html"
+  },
+  "editor.tabSize": 2,
+  "eslint.enable": true,
+  "eslint.alwaysShowStatus": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": true
+  },
+  "rest-client.fontSize": null,
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\wsl.exe",
+  "editor.fontFamily": "'Fira Code', 'BIZ UDゴシック', 'UbuntuMono NF', Consolas, 'Courier New', monospace",
+  "auto-close-tag.activationOnLanguage": [
+    "xml",
+    "php",
+    "blade",
+    "ejs",
+    "jinja",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "plaintext",
+    "markdown",
+    "vue",
+    "liquid",
+    "erb",
+    "lang-cfml",
+    "cfml",
+    "HTML (Eex)",
+    "django-html"
+  ],
+  "html.format.endWithNewline": true,
+  "window.zoomLevel": -1,
+  "files.eol": "\n",
+  "remote.SSH.showLoginTerminal": true,
+  "python.jediEnabled": false,
+  "editor.formatOnSaveTimeout": 5000,
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "400",
+  "gitlens.views.compare.files.layout": "tree",
+  "python.dataScience.sendSelectionToInteractiveWindow": true,
+  "markdown-preview-enhanced.enableCriticMarkupSyntax": true,
+  "markdown-preview-enhanced.enableExtendedTableSyntax": true,
+  "python.dataScience.askForKernelRestart": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorCustomizations": {},
+  "editor.formatOnSave": true,
+  "csharp.suppressDotnetInstallWarning": true,
+  "files.associations": {
+    "*.txt": "plaintext"
+  },
+  "editor.multiCursorModifier": "alt",
+  "terminal.integrated.rendererType": "dom",
+  "terminal.integrated.fontFamily": "'FiraMono nerd Font Mono'",
+  "terminal.integrated.fontSize": 16,
+  "git-graph.fetchAndPrune": true,
+  "git-graph.dialog.applyStash.reinstateIndex": true,
+  "git-graph.fetchAvatars": true,
+  "remote.extensionKind": {
+    "ms-azuretools.vscode-docker": "workspace"
+  },
+  // "[ruby]": {
+  //   "editor.defaultFormatter": "misogi.ruby-rubocop"
+  // },
+  "bookmarks.sideBar.expanded": true,
+  "hediet.vscode-drawio.theme": "atlas",
+  "python.languageServer": "Microsoft",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "hediet.vscode-drawio.codeLinkActivated": false,
+  "scm.alwaysShowActions": true,
+  "python.showStartPage": false,
+  "markdown.marp.enableHtml": true,
+  "ruby.rubocop.useBundler": true,
+  "diffEditor.renderSideBySide": false
+}
+
