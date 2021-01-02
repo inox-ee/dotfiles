@@ -7,9 +7,12 @@
   - zinit
   - p10k
 
-## setup
+## How to setup
 
-### WSL2
+The first step is to enable WSL2, and then install dotfiles.
+There are two ways to set up the shell environments.
+
+## Step 1 - Enable WSL2
 
 1. Official documents
    > <https://docs.microsoft.com/ja-jp/windows/wsl/install-win10>
@@ -28,7 +31,7 @@
 5. Setup new Distribution
    Input ID & password.
 
-#### WSL2 - Trouble Shooting
+#### [WSL2] Trouble Shooting
 
 1. Do not forget to enable WSL and VM
 
@@ -43,7 +46,24 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatfrm /all /norest
 
 copy `wsl_update_x64.msi` to `C:\Windows\System32\lxss\tools\` and execute.
 
-### Linux
+## Step 2. - Install Dotfiles
+
+### Option 1 - Automatic Installation (Recommended)
+
+The easiest way to install dotfiles is to execute:
+
+```sh
+$ git clone https://github.com/inox-ee/dotfiles.git
+$ ~/dotfiles/initial.sh
+# >>> Done
+$ ~/dotfiles/setup.zsh
+```
+
+This will install dotfiles and complete your own zsh environment.
+
+### Option 2 - Manual Installation
+
+#### Linux
 
 1. Change apt mirror server
 
@@ -67,7 +87,7 @@ $ sudo apt install zsh
 $ chsh -s $(which zsh)
 ```
 
-### dotfiles
+#### dotfiles
 
 1. Initial setup
 
@@ -109,3 +129,4 @@ $ pip install trash-cli
 ## Caution!
 
 1. This repository does not preserve `.zhistory`.
+
