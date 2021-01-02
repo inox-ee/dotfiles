@@ -5,10 +5,10 @@ echo "Do you want to run $0?(y/N): "; read -q && echo "" || exit 0
 # =====
 # install essentials
 # =====
-sudo apt install build-essential libbz2-dev libdb-dev \
+(sudo apt install build-essential libbz2-dev libdb-dev \
   libreadline-dev libffi-dev libgdbm-dev liblzma-dev \
   libncursesw5-dev libsqlite3-dev libssl-dev \
-  zlib1g-dev uuid-dev tk-dev
+  zlib1g-dev uuid-dev tk-dev)
 
 # =====
 # install zinit (skip recommended plugins)
@@ -19,11 +19,11 @@ sudo apt install build-essential libbz2-dev libdb-dev \
 # isntall pip
 # =====
 echo "$(python --version), is it ok?(y/N): "
-if read -q; then
+if read -q && echo ""; then
   curl https://bootstrap.pypa.io/get-pip.py | python
   echo $(pip --version)
 else
-	echo "\e[31m[CAUTION!] please install Python 3.0.0>\e[m"
+  echo "\e[31m[CAUTION!] please install Python 3.0.0>\e[m"
 fi
 
 # =====
@@ -32,8 +32,8 @@ fi
 if ! [ -d $HOME/.fzf ]; then
   git clone --depth 1 https://github.com/junegunn/fzf.git $HOME/.fzf
   $HOME/.fzf/install
-  rm -i $HOME/.fzf.bash
-  rm -i $HOME/.fzf.zsh
+  rm $HOME/.fzf.bash
+  rm $HOME/.fzf.zsh
 fi
 
 # =====
