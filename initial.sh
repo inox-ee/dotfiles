@@ -17,7 +17,7 @@ sudo sed -i.bak -e "s%http://\(jp\.\)*archive\.ubuntu\.com/ubuntu/%http://ftp.ri
 # =====
 # apt update/upgrade
 # =====
-(sudo apt update && sudo apt upgrade)
+(sudo apt update -y && sudo apt upgrade -y)
 
 # =====
 # install zsh
@@ -48,7 +48,7 @@ done
 # =====
 # continue to setup.zsh
 # =====
-echo "\e[32m[Success to install ZSH]\e[m After restart terminal, \e[30;43m please run setup.sh\e[m"
+echo "\e[32m[Success to install ZSH]\e[m After restart terminal, \e[30;43m please run setup.sh \e[m"
 
 while true; do
     read -p "Do you restart terminal? (y/n)" yn
