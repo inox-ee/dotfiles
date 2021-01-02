@@ -63,6 +63,9 @@ This will install dotfiles and complete your own zsh environment.
 
 ### Option 2 - Manual Installation
 
+<details>
+<summary>Details of manual installation (May not be the latest version)</summary>
+
 #### Linux
 
 1. Change apt mirror server
@@ -120,6 +123,8 @@ $ curl https://bootstrap.pypa.io/get-pip.py | python
 # install trash-cli
 $ pip install trash-cli
 ```
+
+</details>
 
 ## other setup
 
