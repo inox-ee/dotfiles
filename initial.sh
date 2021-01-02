@@ -10,6 +10,11 @@ while true; do
 done
 
 # =====
+# change apt mirror server
+# =====
+sudo sed -i.bak -e "s%http://\(jp\.\)*archive\.ubuntu\.com/ubuntu/%http://ftp.riken.go.jp/Linux/ubuntu/%g" /etc/apt/sources.list
+
+# =====
 # apt update/upgrade
 # =====
 (sudo apt update && sudo apt upgrade)
