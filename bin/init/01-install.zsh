@@ -18,9 +18,9 @@ echo -n "Do you want to run $0?(y/N): "; read -q && echo "" || exit 0
 # =====
 # isntall pip
 # =====
-echo -n "$(python --version), is it ok?(y/N): "
+echo -n "$(python3 --version), is it ok?(y/N): "
 if read -q && echo ""; then
-  curl https://bootstrap.pypa.io/get-pip.py | python
+  curl https://bootstrap.pypa.io/get-pip.py | python3
   echo $(pip --version)
 else
   echo "\e[31m[CAUTION!] please install Python 3.0.0>\e[m"

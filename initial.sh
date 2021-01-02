@@ -10,6 +10,11 @@ while true; do
 done
 
 # =====
+# apt update/upgrade
+# =====
+(sudo apt update && sudo apt upgrade)
+
+# =====
 # install zsh
 # =====
 if ! $(which zsh); then sudo apt install zsh; fi
