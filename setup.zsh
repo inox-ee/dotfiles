@@ -12,3 +12,6 @@ if [ -d $INIT -a -r $INIT -a -x $INIT ]; then
   done
 fi
 
+echo -n "Restart zsh?(y/N): "
+if read -q && echo ""; then exec zsh; fi
+

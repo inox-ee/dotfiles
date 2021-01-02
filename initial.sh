@@ -48,5 +48,5 @@ while true; do
         * ) echo "Please answer yes or no.";;
     esac
 done
-exec zsh
+cmd.exe /c "wt.exe" -p "Ubuntu-18.04" && exit
 

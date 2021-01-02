@@ -1,11 +1,11 @@
 #!/bin/zsh
 
-echo "Do you want to run $0?(y/N): "; read -q && echo "" || exit 0
+echo -n "Do you want to run $0?(y/N): "; read -q && echo "" || exit 0
 
 # =====
 # install powerline fonts
 # =====
-echo "\e[34m[WARNING] If you haven't install powerline fonts, please access to https://nerdfonts.com. Download FiraMono Nerd Font and install it.\e[m"
+echo "\e[33m[WARNING] If you haven't install powerline fonts, please access to https://nerdfonts.com. Download FiraMono Nerd Font and install it.\e[m"
 
 # =====
 # change apt mirror server
