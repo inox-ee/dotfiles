@@ -30,7 +30,7 @@ fi
 ARCHIVEDIR="$HOME/.archives"
 mkdir -p $ARCHIVEDIR
 for i in $(cd $HOME; ls -A); do
-  if [ $HOME/$i != $ARCHIVEDIR -a $HOME/$i != $ZSHENV ]; then
+  if [ $HOME/$i != (cd `dirname $0` && pwd)  -a $HOME/$i != $ARCHIVEDIR -a $HOME/$i != $ZSHENV ]; then
     mv $HOME/$i $ARCHIVEDIR
   fi
 done
