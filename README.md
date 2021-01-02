@@ -48,7 +48,7 @@ copy `wsl_update_x64.msi` to `C:\Windows\System32\lxss\tools\` and execute.
 1. Change apt mirror server
 
 ```sh
-sudo sed -i.bak -e "s%http://jp.archive.ubuntu.com/ubuntu/%http://ftp.riken.go.jp/Linux/ubuntu/%g" /etc/apt/sources.list
+sudo sed -i.bak -e "s%http://\(jp\.\)*archive\.ubuntu\.com/ubuntu/%http://ftp.riken.go.jp/Linux/ubuntu/%g" /etc/apt/sources.list
 ```
 
 2. Install essentials
