@@ -21,7 +21,7 @@ if [ $SHELL != "$(which zsh)" ]; then chsh -s $(which zsh); fi
 
 ZSHENV="$HOME/.zshenv"
 if ! [ -f $ZSHENV ]; then
-  echo export ZDOTDIR="$HOME/dotfiles"\\nsource $ZDOTDIR/.zshenv\\n > $ZSHENV
+  echo export ZDOTDIR=\$HOME/dotfiles\\nsource \$ZDOTDIR/.zshenv\\n > $ZSHENV
 fi
 
 # =====
@@ -31,7 +31,7 @@ ARCHIVEDIR="$HOME/.archives"
 mkdir -p $ARCHIVEDIR
 for i in $(cd $HOME; ls -A); do
   if [ $HOME/$i != $ARCHIVEDIR -a $HOME/$i != $ZSHENV ]; then
-    mv $i $ARCHIVEDIR
+    mv $HOME/$i $ARCHIVEDIR
   fi
 done
 
