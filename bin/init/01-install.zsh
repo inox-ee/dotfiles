@@ -47,7 +47,10 @@ mkdir -p ~/.vim/colors
 # =====
 # install rbenv
 # =====
-if ! $(which rbenv); then git clone https://github.com/rbenv/rbenv.git $HOME/.rbenv; fi
+if ! $(which rbenv); then
+  git clone https://github.com/rbenv/rbenv.git $HOME/.rbenv
+  git clone https://github.com/sstephenson/ruby-build.git $HOME/.rbenv/plugins/ruby-build
+fi
 
 # =====
 # install trash-cli
