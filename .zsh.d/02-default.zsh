@@ -3,8 +3,12 @@ export EDITOR='vim'
 export VISUAL='vim'
 export PAGER='less'
 
-# enable zsh default function
+# keybind
 bindkey -e
+bindkey ";5C" forward-word
+bindkey ";5D" backward-word
+
+# enable zsh default function
 autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
 add-zsh-hook chpwd chpwd_recent_dirs
 zstyle ':chpwd:*' recent-dirs-max 100
