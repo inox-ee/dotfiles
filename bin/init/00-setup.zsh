@@ -10,7 +10,7 @@ echo "\e[33m[WARNING] If you haven't install powerline fonts, please access to h
 # =====
 # create symlink
 # =====
-TARGET=(".gitconfig" ".vim")
+TARGET=(".gitconfig" ".vim" ".tmux.conf")
 for i in $TARGET; do
   ! [ -h $HOME/$i ] && ln -siv $ZDOTDIR/$i $HOME
 done
