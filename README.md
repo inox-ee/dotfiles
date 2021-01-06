@@ -1,5 +1,7 @@
 # Dotfiles for inox-ee
 
+![dotfiles](./misc/dotfiles.gif)
+
 ## environments
 
 - WSL2
