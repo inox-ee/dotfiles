@@ -4,7 +4,7 @@ export FZF_CTRL_T_COMMAND="find . -not -path '*/\.git/*'"
 
 function select_cdr(){
     local selected_dir=$(cdr -l | awk '{ print $2 }' | \
-        fzf --preview 'f() { sh -c "ls -hFGlA $1" }; f {}')
+        fzf --preview 'f() { sh -c "tree -aFC -L 2 $1" }; f {}')
     if [ -n "$selected_dir" ]; then
         BUFFER="cd ${selected_dir}"
         zle accept-line
