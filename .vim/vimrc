@@ -1,5 +1,6 @@
 set fenc=utf-8
-set term=builtin_ansi
+"矢印キー対策で設定した(ハズ)が、ウィンドウがターミナルに残ってしまうので削除
+"set term=builtin_ansi
 set nocompatible
 set noswapfile
 set showcmd
