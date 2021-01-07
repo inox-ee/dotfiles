@@ -57,3 +57,8 @@ fi
 # =====
 if ! $(which pip); then pip install trash-cli; fi
 
+# =====
+# install tree
+# =====
+if ! $(which tree); then sudo apt install tree; fi
+
