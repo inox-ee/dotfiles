@@ -28,7 +28,7 @@ bindkey "^k^l" select_ccd
 
 # git statusで対象となるファイルのgit diffみながらファイルを選択する
 function select_file_from_git_status() {
-  git status -u --short | \
+  unbuffer git status -u --short | \
     fzf -m --ansi --reverse --preview 'f() {
       local original=$@
       set -- $(echo "$@");

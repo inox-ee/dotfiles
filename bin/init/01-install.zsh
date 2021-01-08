@@ -62,3 +62,8 @@ if ! $(which pip); then pip install trash-cli; fi
 # =====
 if ! $(which tree); then sudo apt install tree; fi
 
+# =====
+# install expect (for `unbuffer` command)
+# =====
+if ! $(which unbuffer); then sudo apt install expect; fi
+
