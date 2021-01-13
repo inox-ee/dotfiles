@@ -17,12 +17,12 @@ sudo sed -i.bak -e "s%http://\(jp\.\)*archive\.ubuntu\.com/ubuntu/%http://ftp.ri
 # =====
 # apt update/upgrade
 # =====
-(sudo apt update -y && sudo apt upgrade -y)
+(sudo apt update -y -qq && sudo apt upgrade -qq)
 
 # =====
 # install zsh
 # =====
-type zsh > /dev/null 2>&1 || sudo apt install zsh
+type zsh > /dev/null 2>&1 || sudo apt install -qq zsh
 
 # =====
 # set zsh and create ~/.zshrc
