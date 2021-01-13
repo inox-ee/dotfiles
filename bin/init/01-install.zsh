@@ -47,7 +47,7 @@ mkdir -p ~/.vim/colors
 # =====
 # install rbenv
 # =====
-if ! $(which rbenv); then
+if whence -w rbenv; then
   git clone https://github.com/rbenv/rbenv.git $HOME/.rbenv
   git clone https://github.com/sstephenson/ruby-build.git $HOME/.rbenv/plugins/ruby-build
 fi
@@ -55,15 +55,15 @@ fi
 # =====
 # install trash-cli
 # =====
-if ! $(which pip); then pip install trash-cli; fi
+whence -w pip && whence -w trash || pip install trash-cli
 
 # =====
 # install tree
 # =====
-if ! $(which tree); then sudo apt install tree; fi
+whence -w tree || sudo apt install tree
 
 # =====
 # install expect (for `unbuffer` command)
 # =====
-if ! $(which unbuffer); then sudo apt install expect; fi
+whence -w unbuffer || sudo apt install expect
 

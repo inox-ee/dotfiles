@@ -22,12 +22,12 @@ sudo sed -i.bak -e "s%http://\(jp\.\)*archive\.ubuntu\.com/ubuntu/%http://ftp.ri
 # =====
 # install zsh
 # =====
-if ! $(which zsh); then sudo apt install zsh; fi
+type zsh > /dev/null 2>&1 || sudo apt install zsh
 
 # =====
 # set zsh and create ~/.zshrc
 # =====
-if [ $SHELL != "$(which zsh)" ]; then chsh -s $(which zsh); fi
+[ $SHELL == "$(which zsh)" ] && chsh -s $(which zsh)
 
 ZSHENV="$HOME/.zshenv"
 if ! [ -f $ZSHENV ]; then
