@@ -7,6 +7,9 @@ export PAGER='less'
 bindkey -e
 bindkey ";5C" forward-word
 bindkey ";5D" backward-word
+bindkey "^Q" backward-kill-word # push-line
+bindkey "^W" forward-word # backward-kill-word
+bindkey "^S" backward-word # history-incremental-search-forward
 
 # enable zsh default function
 autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
