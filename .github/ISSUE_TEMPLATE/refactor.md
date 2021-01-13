@@ -2,8 +2,8 @@
 name: Refactor
 about: Create a report to refactoring
 title: "[REF]"
-labels: refactor
-assignees: ''
+labels: enhancement
+assignees: inox-ee
 
 ---
 
