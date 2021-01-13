@@ -27,7 +27,7 @@ type zsh > /dev/null 2>&1 || sudo apt install zsh
 # =====
 # set zsh and create ~/.zshrc
 # =====
-[ $SHELL == "$(which zsh)" ] && chsh -s $(which zsh)
+[ $SHELL == "$(which zsh)" ] || chsh -s $(which zsh)
 
 ZSHENV="$HOME/.zshenv"
 if ! [ -f $ZSHENV ]; then
