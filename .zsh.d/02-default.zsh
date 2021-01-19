@@ -22,7 +22,21 @@ zstyle ':completion:*' recent-dirs-insert both
 export HISTFILE="$HOME/.zhistory" # Don't forget to give permission `600`
 HISTSIZE=10000
 SAVEHIST=1000000
+HISTORY_IGNORE="(pwd|l|l[sal]|clear|cl)"
 setopt EXTENDED_HISTORY
 setopt hist_ignore_dups
 setopt inc_append_history
+setopt hist_ignore_space
+setopt hist_reduce_blanks
+setopt hist_no_store
 function history-all { history -E 1 }
+zshaddhistory() {
+  local line=${1%%$'\n'}
+  local cmd=${line%% *}
+  [[ ${cmd} != (l|l[sal])
+        && ${cmd} != (m|man)
+        && ${cmd} != (pwd)
+        && ${cmd} != (cl|clear)
+  ]]
+}
+
