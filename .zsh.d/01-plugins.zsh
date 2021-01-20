@@ -4,8 +4,6 @@
 zinit ice silent
 zinit load zsh-users/zsh-syntax-highlighting
 zinit ice silent
-zinit load zsh-users/zsh-syntax-highlighting
-zinit ice silent
 zinit load zsh-users/zsh-completions
 zinit ice silent
 zinit load zsh-users/zsh-autosuggestions
