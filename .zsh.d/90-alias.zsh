@@ -14,6 +14,7 @@ alias cl='clear'
 ## git
 alias gad='git add'
 alias gada='git add .'
+alias gcm='git commit -m'
 alias gfe='git fetch --prune'
 alias gps='git push origin HEAD'
 alias gsw='git switch'
