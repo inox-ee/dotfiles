@@ -11,3 +11,12 @@ alias vpn-elab="ssh -D 10080 user@elab-gw.ic.i.u-tokyo.ac.jp"
 alias dc='docker-compose'
 alias cl='clear'
 
+## git
+alias gad='git add'
+alias gada='git add .'
+alias gfe='git fetch --prune'
+alias gps='git push origin HEAD'
+alias gsw='git switch'
+alias gswd='git switch develop'
+alias grsa='git restore .'
+
