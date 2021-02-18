@@ -34,3 +34,7 @@ function grepex() {
   grep -C 1 "$1" -rn ./ --exclude-dir=".git" --color="always"
 }
 
+function treeex() {
+  tree -aFC -L 2
+}
+
