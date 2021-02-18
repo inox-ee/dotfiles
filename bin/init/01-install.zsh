@@ -17,6 +17,12 @@ echo -n "Do you want to run $0?(y/N): "; read -q && echo "" || exit 0
 # # you don't need to do anything.
 
 # =====
+# install pyenv
+# =====
+git clone https://github.com/pyenv/pyenv.git $HOME/.pyenv
+(cd $$HOME/.pyenv && src/configure && make -C src)
+
+# =====
 # isntall pip
 # =====
 echo -n "$(python3 --version), is it ok?(y/N): "
