@@ -56,7 +56,7 @@ function leetgode() {
   {
     mkdir -p "./leetcode/$1.$2"
     cd $_
-    touch "$2.go"
+    touch "$2.go" && touch "README.md"
     curl -LO "https://raw.githubusercontent.com/aQuaYi/LeetCode-in-Go/master/Algorithms/$1.$2/$2_test.go"
     echo "create $1.$2/$2.go, $2_test.go"
   } always {
