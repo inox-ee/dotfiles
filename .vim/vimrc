@@ -6,6 +6,8 @@ set noswapfile
 set showcmd
 set viminfo+=n$ZDOTDIR/.vim/.viminfo
 
+set visualbell t_vb=
+
 set number
 set showmatch
 set laststatus=2
