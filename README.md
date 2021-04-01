@@ -9,6 +9,10 @@
   - Plugin manager: [zinit](https://github.com/zdharma/zinit)
   - Color theme: [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
+### Other Environments
+
+- macOS: <https://github.com/inox-ee/dotfiles-macOS>
+
 ## How to setup
 
 The first step is to enable WSL2, and then install dotfiles.
