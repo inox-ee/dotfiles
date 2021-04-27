@@ -11,7 +11,7 @@
 
 ### Other Environments
 
-- macOS: <https://github.com/inox-ee/dotfiles-macOS>
+- macOS: <https://gitlab.com/ino-playground/dotfiles-macos>
 
 ## How to setup
 
