@@ -1,5 +1,5 @@
 # Aliases
-alias ls='ls --group-directories-first --color -F'
+alias ls='ls --group-directories-first --human-readable --color -F'
 alias l='ls -la'
 alias rm='echo "This is not the command you are looking for."; false'
 alias ln='ln -iv'
