@@ -1,13 +1,17 @@
 # Dotfiles for inox-ee
 
-![dotfiles](./misc/dotfiles.gif)
+![dotfiles](./misc/imgs/dotfiles.gif)
 
-## environments
+## Environments
 
-- WSL2
-- zsh
-  - zinit
-  - p10k
+- OS: Ubuntu20.04 on WSL2 (Ubuntu18.04 is also operability confirmed.)
+- SHELL: Zsh
+  - Plugin manager: [zinit](https://github.com/zdharma/zinit)
+  - Color theme: [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
+
+### Other Environments
+
+- macOS: <https://gitlab.com/ino-playground/dotfiles-macos>
 
 ## How to setup
 
@@ -19,7 +23,7 @@ There are two ways to set up the shell environments.
 1. Official documents
    > <https://docs.microsoft.com/ja-jp/windows/wsl/install-win10>
 2. Download Linux Kernel Update Program Package
-   ダウンロードして実行 : <https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi>
+   Download and Execute : <https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi>
    if some error occured ("This update only applies to machines with the WSL"), copy `wsl_update_x64.msi` to `C:\Windows\System32\lxss\tools\`
 3. Set WSL2 to default
 
