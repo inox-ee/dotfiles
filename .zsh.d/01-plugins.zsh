@@ -8,6 +8,7 @@ zinit load zsh-users/zsh-completions
 zinit ice silent
 zinit load zsh-users/zsh-autosuggestions
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=8"
+# ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=236"
 
 ## Prezto
 zinit ice silent

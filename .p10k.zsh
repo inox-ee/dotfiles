@@ -111,7 +111,8 @@
 
   typeset -g POWERLEVEL9K_TIME_FORMAT="%D{%y/%m/%d \uf073 %H:%M}"
   typeset -g POWERLEVEL9K_TIME_BACKGROUND='clear'
-  typeset -g POWERLEVEL9K_TIME_FOREGROUND='lightslategrey'
+#  typeset -g POWERLEVEL9K_TIME_FOREGROUND='lightslategrey'
+  typeset -g POWERLEVEL9K_TIME_FOREGROUND='blue'
 
   typeset -g POWERLEVEL9K_VCS_CLEAN_BACKGROUND='clear'
   typeset -g POWERLEVEL9K_VCS_CLEAN_FOREGROUND='green'
