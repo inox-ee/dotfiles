@@ -17,7 +17,11 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # pyenv
+export PYENV_ROOT=$HOME/.pyenv
 if whence -w pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+
+# pipenv
+export PIPENV_VENV_IN_PROJECT=true
 

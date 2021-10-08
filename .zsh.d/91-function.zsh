@@ -42,7 +42,7 @@ function gittemplate() {
 }
 
 function grepex() {
-  grep -C 1 "$1" -rn ./ --exclude-dir=".git" --color="always"
+  grep -C 1 "$1" -rn ./ --exclude-dir={.git,node_modules,tmp,bin,vendor} --color="always"
 }
 
 function treeex() {

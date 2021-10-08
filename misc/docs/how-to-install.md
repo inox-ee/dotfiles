@@ -2,16 +2,21 @@
 
 ## Go
 
-```bash
+```shell-session
 # Download go
 $ curl -OL https://golang.org/dl/go1.15.7.linux-amd64.tar.gz
 # unpack go.tar.gz
-$ sudo tar -C /usr/locl -xzf go1.15.7.linux-amd64.tar.gz
+$ sudo tar -C /usr/local -xzf go1.15.7.linux-amd64.tar.gz
 # add PATHs to .zshrc
 ### export PATH="$PATH:/usr/local/go/bin"
 ### export GOPATH=$HOME/go
 # check installation
 $ go version
+
+# if upgrade
+# delete current go
+$ sudo rm -rf /usr/local/go
+# refer to the above (Download the latest version, and unpack ...)
 ```
 
 - ref: <https://golang.org/doc/install>

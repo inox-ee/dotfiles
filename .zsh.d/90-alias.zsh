@@ -26,3 +26,7 @@ alias gsw='git switch'
 alias gswd='git switch develop'
 alias grsa='git restore .'
 
+# Marp <https://github.com/marp-team/marp-cli>
+alias marp-npx='npx @marp-team/marp-cli@latest'
+alias marp-docker='docker run --rm -v "$(pwd):/home/marp/app" -e MARP_USER=$(id -u):$(id -g) -e LANG="ja_JP.UTF-8" marpteam/marp-cli --allow-local-files'
+
