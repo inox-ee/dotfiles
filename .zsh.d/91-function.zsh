@@ -85,3 +85,7 @@ function leetgode() {
   }
   return
 }
+
+function rm-dangling-dim() {
+  docker rmi $(docker images -f "dangling=true" -q)
+}
