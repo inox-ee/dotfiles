@@ -3,6 +3,9 @@ export EDITOR='vim'
 export VISUAL='vim'
 export PAGER='less'
 
+## settings
+setopt no_beep
+
 # keybind
 bindkey -e
 bindkey ";5C" forward-word
