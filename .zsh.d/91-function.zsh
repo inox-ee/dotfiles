@@ -42,11 +42,11 @@ function gittemplate() {
 }
 
 function grepex() {
-  grep -C 1 "$1" -rn ./ --exclude-dir={.git,node_modules,tmp,bin,vendor} --color="always"
+  grep -C 1 "$1" -rn ./ --exclude-dir={.git,node_modules,tmp,bin,vendor,log} --color="always"
 }
 
 function treeex() {
-  tree -aFC -L 2
+  tree -aFC -L 2 -I "\.DS_Store|\.git|node_modules|vendor\/bundle"
 }
 
 function leetgode() {
@@ -88,4 +88,8 @@ function leetgode() {
 
 function rm-dangling-dim() {
   docker rmi $(docker images -f "dangling=true" -q)
+}
+
+function chromeex() {
+  chrome "file://wsl%24/Ubuntu-20.04$(pwd)/$1"
 }
