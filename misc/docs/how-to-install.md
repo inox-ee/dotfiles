@@ -21,6 +21,16 @@ $ sudo rm -rf /usr/local/go
 
 - ref: <https://golang.org/doc/install>
 
+(after 2023/02/24)
+
+```shell-session
+sudo add-apt-repository ppa:longsleep/golang-backports
+sudo apt update
+sudo apt install golang-go
+```
+
+- ref: https://github.com/golang/go/wiki/Ubuntu
+
 ## Protobuf
 
 ```bash
